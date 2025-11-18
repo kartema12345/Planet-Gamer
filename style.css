@@ -1,0 +1,10 @@
+
+:root{
+  --bg:#070708; --panel:#0f1113; --muted:#9aa3ad; --accent:#00d08b; --accent-2:#00a7d0;
+  --glass: rgba(255,255,255,0.03);
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,var(--bg),#040405);color:#eef2f6}
+
+.brand-logo{width:36px;height:36px}
+.planet-logo{width:60px;height:auto;margin-right:10px}
