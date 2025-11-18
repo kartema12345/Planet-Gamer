@@ -1,10 +1,161 @@
-
-:root{
-  --bg:#070708; --panel:#0f1113; --muted:#9aa3ad; --accent:#00d08b; --accent-2:#00a7d0;
-  --glass: rgba(255,255,255,0.03);
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-*{box-sizing:border-box}
-body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,var(--bg),#040405);color:#eef2f6}
 
-.brand-logo{width:36px;height:36px}
-.planet-logo{width:60px;height:auto;margin-right:10px}
+body {
+    background: #0d0d0d;
+    color: white;
+}
+
+/* Container padrão */
+.wrap {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ===== HEADER ===== */
+.site-header {
+    background: #111;
+    border-bottom: 1px solid #222;
+    padding: 15px 0;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Logo + texto */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-logo {
+    width: 55px;
+    height: auto;
+}
+
+.brand-text {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* ===== SEARCH ===== */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-container input {
+    padding: 8px 12px;
+    width: 240px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+/* Botão search */
+.search-btn {
+    background: #00aaff;
+    border: none;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.search-btn img {
+    width: 22px;
+}
+
+/* ===== NAV MENU ===== */
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: #85d6ff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav a:hover {
+    color: white;
+}
+
+/* ===== HERO ===== */
+.hero {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.hero .lead {
+    font-size: 18px;
+    color: #cccccc;
+}
+
+/* ===== SECTIONS ===== */
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+/* ===== CARDS GRID ===== */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #111;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin-bottom: 8px;
+}
+
+.meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meta .btn {
+    padding: 5px 14px;
+    background: #00aaff;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    text-align: center;
+    color: #888;
+}
