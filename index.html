@@ -140,3 +140,45 @@
   <script src="script.js"></script>
 </body>
 </html>
+/* BARRA DE PESQUISA ESTILO GGMAX */
+.search-container {
+  position: relative;
+  width: 360px;
+  display: flex;
+  align-items: center;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 10px 45px 10px 15px;
+  border-radius: 6px;
+  border: none;
+  background: #1c1c1c;
+  color: white;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+.search-container input:focus {
+  background: #262626;
+  outline: none;
+}
+
+.search-container .search-btn {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.search-container .search-btn img {
+  width: 20px;
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.search-container .search-btn img:hover {
+  opacity: 1;
+}
