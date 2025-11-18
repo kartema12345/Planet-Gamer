@@ -1,0 +1,1 @@
+import React from 'react';export default function App(){return (<div className="app"><header className="header"><img src="/logo.png" alt="logo" className="logo"/><h1>Planet Gamer</h1></header><main className="container"><h2>Bem-vindo à Planet Gamer</h2><p>Marketplace de contas — preview React</p></main></div>)}
