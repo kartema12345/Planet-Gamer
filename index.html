@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Planet Gamer – Contas & Serviços RS3</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <div class="brand">
+        <img src="https://img.icons8.com/ios-filled/50/00d4ff/game-controller.png" alt="logo" class="brand-logo"/>
+        <span class="brand-text">Planet <strong>Gamer</strong></span>
+      </div>
+
+      <!-- search form submits to search.html like GGMax -->
+      <form class="search-container" action="search.html" method="get" role="search">
+        <input type="text" name="q" id="searchInput" placeholder="Pesquisar contas, serviços..." autocomplete="off" />
+        <button type="submit" class="search-btn" aria-label="Pesquisar">
+          <img src="https://img.icons8.com/ios-filled/50/FFFFFF/search.png" alt="Buscar">
+        </button>
+      </form>
+
+      <nav class="nav">
+        <a href="#home">Início</a>
+        <a href="#info">Informações</a>
+        <a href="#contas">Contas</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato" class="btn">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- decorative floating rares/bosses -->
+  <div class="decor left-decor">
+    <img src="https://i.imgur.com/3ZQ3QxF.png" alt="partyhat" />
+  </div>
+  <div class="decor right-decor">
+    <img src="https://i.imgur.com/2yYayZf.png" alt="boss" />
+  </div>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-content">
+          <h1>Compre Contas e Contrate Serviços para RuneScape</h1>
+          <p class="lead">Contas verificadas, powerleveling, quests, farm de GP e suporte via WhatsApp.</p>
+          <div class="cta-row">
+            <a href="#contas" class="btn">Ver Contas</a>
+            <a href="#servicos" class="btn ghost">Serviços</a>
+          </div>
+          <ul class="hero-features">
+            <li>Entrega segura</li>
+            <li>Vendedores verificados</li>
+            <li>Suporte via WhatsApp</li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <img src="https://i.imgur.com/7bK9QbR.jpg" alt="Banner RS3" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contas" class="section">
+      <div class="wrap">
+        <h2>Contas Disponíveis</h2>
+        <div class="card-grid">
+          <!-- sample cards: JS search filters on search page, but keep cards here too -->
+          <div class="card" data-tags="rs3 main 2600 combat pvm">
+            <img src="https://i.imgur.com/FvK5BCE.png" alt="Conta 1">
+            <h3>RS3 – Main 2600+</h3>
+            <p>Attack 99 / Strength 99 / Magic 92 — ótima para PvM.</p>
+            <div class="meta">
+              <span class="price">R$ 350</span>
+              <button class="btn" onclick="openWhatsApp('Quero comprar RS3 – Main 2600+')">Comprar</button>
+            </div>
+          </div>
+
+          <div class="card" data-tags="rs3 skiller farming 120">
+            <img src="https://i.imgur.com/17K4p7P.png" alt="Conta 2">
+            <h3>RS3 – Skiller Farming 120</h3>
+            <p>Farming 120 / Herblore 99 / Agility 99 — ideal para money-making.</p>
+            <div class="meta">
+              <span class="price">R$ 450</span>
+              <button class="btn" onclick="openWhatsApp('Quero comprar RS3 – Skiller Farming 120')">Comprar</button>
+            </div>
+          </div>
+
+          <div class="card" data-tags="rs3 ironman endgame prifddinas">
+            <img src="https://i.imgur.com/cps5Fvu.png" alt="Conta 3">
+            <h3>RS3 – Ironman Endgame</h3>
+            <p>Ironman com prifddinas desbloqueada e quests completas.</p>
+            <div class="meta">
+              <span class="price">R$ 600</span>
+              <button class="btn" onclick="openWhatsApp('Quero comprar RS3 – Ironman Endgame')">Comprar</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="section alt">
+      <div class="wrap">
+        <h2>Serviços</h2>
+        <div class="service-grid">
+          <div class="service-card">
+            <h3>Powerleveling</h3>
+            <p>Subimos suas skills com métodos seguros.</p>
+          </div>
+          <div class="service-card">
+            <h3>Quests</h3>
+            <p>Completamos quests difíceis e desbloqueamos conteúdo.</p>
+          </div>
+          <div class="service-card">
+            <h3>Farm de GP</h3>
+            <p>Métodos otimizados para gerar ouro (GP).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section dark">
+      <div class="wrap">
+        <h2>Contato</h2>
+        <p>Atendimento via WhatsApp 24/7.</p>
+        <button class="btn big" onclick="openWhatsApp()">Abrir WhatsApp</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <div>© 2025 Planet Gamer</div>
+      <div class="footer-right">Use com responsabilidade — verifique TOS do jogo.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
