@@ -18,3 +18,18 @@ function searchItems() {
     }
   });
 }
+function searchItems() {
+  const text = document.getElementById("searchInput").value.toLowerCase();
+  const cards = document.querySelectorAll(".card");
+
+  cards.forEach(card => {
+    const title = card.querySelector("h3").innerText.toLowerCase();
+    const desc = card.querySelector("p").innerText.toLowerCase();
+
+    if (title.includes(text) || desc.includes(text)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+}
